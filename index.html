@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RecipeJS - Part 2</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>🍽 RecipeJS</h1>
+
+  <!-- FILTER BUTTONS -->
+  <div class="controls">
+    <h2>Filter</h2>
+    <button onclick="setFilter('all')">All Recipes</button>
+    <button onclick="setFilter('easy')">Easy</button>
+    <button onclick="setFilter('medium')">Medium</button>
+    <button onclick="setFilter('hard')">Hard</button>
+    <button onclick="setFilter('quick')">Quick (&lt; 30 mins)</button>
+  </div>
+
+  <!-- SORT BUTTONS -->
+  <div class="controls">
+    <h2>Sort</h2>
+    <button onclick="setSort('name')">Name (A–Z)</button>
+    <button onclick="setSort('time')">Time (Fastest)</button>
+  </div>
+
+  <!-- RECIPES CONTAINER -->
+  <div id="recipes-container" class="recipes"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
